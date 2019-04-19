@@ -1,0 +1,40 @@
+uuid: 268ad674-9b6b-4cd2-a6b7-42fe2778450b
+langcode: fr
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.blog_simple
+    - field.field.node.billet_de_blog.body
+    - field.field.node.billet_de_blog.field_blog_category_
+    - field.field.node.billet_de_blog.field_blog_image
+    - image.style.blog_liste_style
+    - node.type.billet_de_blog
+  module:
+    - image
+    - user
+id: node.billet_de_blog.blog_simple
+targetEntityType: node
+bundle: billet_de_blog
+mode: blog_simple
+content:
+  field_blog_category_:
+    weight: 1
+    label: hidden
+    settings:
+      link: true
+    third_party_settings: {  }
+    type: entity_reference_label
+    region: content
+  field_blog_image:
+    weight: 0
+    label: hidden
+    settings:
+      image_style: blog_liste_style
+      image_link: content
+    third_party_settings: {  }
+    type: image
+    region: content
+hidden:
+  body: true
+  langcode: true
+  links: true

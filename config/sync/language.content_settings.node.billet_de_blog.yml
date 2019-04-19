@@ -1,0 +1,11 @@
+uuid: 18035218-e6d1-48f8-8f9d-0e09527fd312
+langcode: fr
+status: true
+dependencies:
+  config:
+    - node.type.billet_de_blog
+id: node.billet_de_blog
+target_entity_type_id: node
+target_bundle: billet_de_blog
+default_langcode: site_default
+language_alterable: false

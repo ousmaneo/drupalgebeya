@@ -1,0 +1,60 @@
+uuid: 2334704d-7d66-495d-a291-5d6f7db999d7
+langcode: fr
+status: true
+dependencies:
+  config:
+    - field.field.node.billet_de_blog.body
+    - field.field.node.billet_de_blog.field_blog_category_
+    - field.field.node.billet_de_blog.field_blog_image
+    - image.style.thumbnail
+    - node.type.billet_de_blog
+  module:
+    - image
+    - text
+id: node.billet_de_blog.default
+targetEntityType: node
+bundle: billet_de_blog
+mode: default
+content:
+  body:
+    type: text_textarea_with_summary
+    weight: 1
+    settings:
+      rows: 9
+      summary_rows: 3
+      placeholder: ''
+    third_party_settings: {  }
+    region: content
+  field_blog_category_:
+    weight: 26
+    settings:
+      match_operator: CONTAINS
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: entity_reference_autocomplete_tags
+    region: content
+  field_blog_image:
+    weight: 2
+    settings:
+      progress_indicator: throbber
+      preview_image_style: thumbnail
+    third_party_settings: {  }
+    type: image_image
+    region: content
+  title:
+    type: string_textfield
+    weight: 0
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+hidden:
+  created: true
+  langcode: true
+  path: true
+  promote: true
+  status: true
+  sticky: true
+  uid: true

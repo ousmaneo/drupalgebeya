@@ -1,0 +1,9 @@
+uuid: afeb677a-6ce5-4757-b70e-891f7c003f79
+langcode: fr
+status: true
+dependencies: {  }
+name: 'Categorie de Blog'
+vid: categorie_de_blog
+description: 'Categorie de billet de blog'
+hierarchy: 1
+weight: 0

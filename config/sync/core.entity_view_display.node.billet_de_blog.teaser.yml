@@ -1,0 +1,31 @@
+uuid: 447d004c-4619-42ad-92aa-0e0ff7ef241d
+langcode: fr
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.billet_de_blog.body
+    - node.type.billet_de_blog
+  module:
+    - text
+    - user
+id: node.billet_de_blog.teaser
+targetEntityType: node
+bundle: billet_de_blog
+mode: teaser
+content:
+  body:
+    label: hidden
+    type: text_summary_or_trimmed
+    weight: 101
+    settings:
+      trim_length: 600
+    third_party_settings: {  }
+    region: content
+  links:
+    weight: 100
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden:
+  langcode: true

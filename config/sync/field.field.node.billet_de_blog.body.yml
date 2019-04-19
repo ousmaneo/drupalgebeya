@@ -1,0 +1,22 @@
+uuid: f1770cfa-736f-46a2-80ec-4633f6c088d3
+langcode: fr
+status: true
+dependencies:
+  config:
+    - field.storage.node.body
+    - node.type.billet_de_blog
+  module:
+    - text
+id: node.billet_de_blog.body
+field_name: body
+entity_type: node
+bundle: billet_de_blog
+label: Body
+description: ''
+required: true
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  display_summary: false
+field_type: text_with_summary

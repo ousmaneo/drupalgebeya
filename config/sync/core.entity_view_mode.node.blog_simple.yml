@@ -1,0 +1,10 @@
+uuid: 88e1e175-649c-475a-a80d-cce27789a2ca
+langcode: fr
+status: true
+dependencies:
+  module:
+    - node
+id: node.blog_simple
+label: 'Blog simple'
+targetEntityType: node
+cache: true
